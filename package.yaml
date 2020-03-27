@@ -87,19 +87,6 @@ executables:
       - -threaded
       - -with-rtsopts=-N
 
-benchmarks:
-  mpi-hs-benchmarks:
-    source-dirs: bench
-    main: Main.hs
-    dependencies:
-      - base
-      - mpi-hs-cereal
-      - criterion
-    ghc-options:
-      - -rtsopts
-      - -threaded
-      - -with-rtsopts=-N
-
 tests:
   mpi-test-cereal:
     source-dirs: tests/cereal
